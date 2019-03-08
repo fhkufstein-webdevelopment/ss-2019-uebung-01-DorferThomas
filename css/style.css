@@ -4,10 +4,39 @@
 body {
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:14px;
-    margin:0;
     padding:0;
+    margin:auto;
+}
+.inner {
+    width:990px;
+    margin: auto;
+}
+.inner ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+.inner ul li{
+    float:left;
+    background-color:black;
+    text-align: center;
+}
+.inner ul li a {
+    text-decoration: none;
+    color: white;
+    display:block;
 }
 
+.inner ul li a:hover{
+    background-color:green;
+}
+
+.inner ul li ul li {
+    display:none;
+}
+.inner ul li:hover ul li{
+    display:block;
+}
 .logo {
     font-size:30px;
     text-transform: uppercase;
@@ -30,7 +59,7 @@ body {
 
 .stripe {
     background-color:#337ab7;
-    width:100%;
+    width:auto;
     height:15px;
 
 }
