@@ -29,14 +29,17 @@ body {
 .level_1  li{
     display:inline-block;
     background-color: #fff;
-    color: #337ab7;
     width: 200px;
     position:relative;
     padding-bottom:5px;
 }
+.level_1 li a
+{
+    color:#337ab7;
+}
 .level_1 > li > a{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .level_2{
@@ -46,12 +49,12 @@ body {
     display:block;
     position: relative;
     width:300px;
-    padding-bottom: 10px;
-    padding-top: 10px;
     z-index: 1;  /*Die Eigenschaft z-index gibt an, in welcher Reihenfolge Elemente auf dem Ausgabemedium dargestellt werden*/
 }
 .level_2 > li > a{
-    padding-left:2px;
+    display:block;
+    padding:10px;
+    font-size: 16px;
 }
 
 /*Hover effekte eingebunden, damit wenn man mit dem Mauszeiger über die Nav-Leiste fährt die Untermenüs erscheinen.*/
@@ -61,12 +64,15 @@ header nav .level_1 li:hover .level_2 {
     position: absolute;
 }
 
-header nav .level_2 li:hover{
-    display:block;
+header nav .level_2 li:hover
+{
     background-color:#337ab7;
-    color:#fff;
-
 }
+header nav .level_2 li a:hover
+{
+    color:white;
+}
+
 
 
 .logo {
